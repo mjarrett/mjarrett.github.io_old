@@ -1,16 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Nikola Site</title><link>https://example.com/</link><description>This is a demo site for Nikola.</description><atom:link href="https://example.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:n.tesla@example.com"&gt;Nikola Tesla&lt;/a&gt; </copyright><lastBuildDate>Sat, 06 Jan 2018 05:28:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Welcome to Nikola</title><link>https://example.com/posts/welcome-to-nikola/</link><dc:creator>Roberto Alsina</dc:creator><description>&lt;div&gt;&lt;div class="figure"&gt;
-&lt;a class="reference external image-reference" href="https://farm1.staticflickr.com/138/352972944_4f9d568680_z.jpg?zz=1"&gt;&lt;img alt="Nikola Tesla Corner by nicwest, on Flickr" class="thumbnail" src="https://farm1.staticflickr.com/138/352972944_4f9d568680.jpg"&gt;&lt;/a&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mike Jarrett</title><link>https://data.mikejarrett.ca/</link><description>Mike Jarrett's data science blog</description><atom:link href="https://data.mikejarrett.ca/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:mike@mikejarrett.ca"&gt;Mike Jarrett&lt;/a&gt; </copyright><lastBuildDate>Sat, 06 Jan 2018 19:12:45 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setting Up Nikola</title><link>https://data.mikejarrett.ca/blog/setting-up-nikola/</link><dc:creator>Mike Jarrett</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+    &lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
-&lt;p&gt;If you can see this in a web browser, it means you managed to install Nikola,
-and build a site using it. Congratulations!&lt;/p&gt;
-&lt;p&gt;Next steps:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://example.com/pages/handbook/"&gt;Read the manual&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://getnikola.com"&gt;Visit the Nikola website to learn more&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://example.com/galleries/demo/"&gt;See a demo photo gallery&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://example.com/pages/listings-demo/"&gt;See a demo listing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://example.com/pages/slides-demo/"&gt;See a demo slideshow&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://example.com/pages/dr-nikolas-vendetta/"&gt;See a demo of a longer text&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Send feedback to &lt;a class="reference external" href="mailto:info@getnikola.com"&gt;info@getnikola.com&lt;/a&gt;!&lt;/p&gt;&lt;/div&gt;</description><category>blog</category><category>demo</category><category>nikola</category><category>python</category><guid>https://example.com/posts/welcome-to-nikola/</guid><pubDate>Sat, 31 Mar 2012 02:00:00 GMT</pubDate></item></channel></rss>
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Setting-up-a-Jupyter-blog"&gt;Setting up a Jupyter blog&lt;a class="anchor-link" href="https://data.mikejarrett.ca/blog/setting-up-nikola/#Setting-up-a-Jupyter-blog"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;I decided to move from a Wordpress blog to a static site hosted on github, and I mainly wanted something that would support Jupyter notebooks as blogposts. After hunting around a bit, Nikola seemed like the best bet: simple, written in Python, and with native notebook support.&lt;/p&gt;
+&lt;p&gt;I followed &lt;a href="http://www.jaakkoluttinen.fi/blog/how-to-blog-with-jupyter-ipython-notebook-and-nikola/"&gt;this blog post&lt;/a&gt; for setting up Nikola, and it worked really well!&lt;/p&gt;
+&lt;p&gt;The only problem I found was that the default CSS that Nikola uses for notebooks has some ugly aspects, and it's not trivial to change. I particularly don't like the colored boxes that show up to the left of each cell around the In/Out prompts.&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Modifying-a-theme"&gt;Modifying a theme&lt;a class="anchor-link" href="https://data.mikejarrett.ca/blog/setting-up-nikola/#Modifying-a-theme"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The Nikola base template lives in the Nikola package root, so to modify the CSS we'll have to mess around with themes.
+First, I picked a standard theme to use: &lt;code&gt;bootstrap3-gradients&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Theme-specific CSS files live in &lt;code&gt;./themes/bootstrap3-gradients/assets/css/&lt;/code&gt;. Some themes (like bootstrap) don't come with this folder by default so I created it. In other themes it's already there. Then I created a file called &lt;code&gt;custom_ipython.css&lt;/code&gt;, where I'll put my custom CSS to modify Jupyter notebooks. For now, I just want to remove the gray blocks around the In/Out prompts and the extra border around code cells, so my css file looks like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;/* Override nikola_ipython.css */&lt;/span&gt;
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;prompt&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="mh"&gt;#FFFFFF&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;input&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;none&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The bootstrap theme won't look for this file by default, so I need to modify the theme template file &lt;code&gt;./themes/bootstrap3-gradients/templates/base_helper.tmpl&lt;/code&gt;. I look for the section with the default ipython CSS files, and add a line with my custom file:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="nt"&gt;if&lt;/span&gt; &lt;span class="nt"&gt;needs_ipython_css&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;link&lt;/span&gt; &lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"/assets/css/ipython.min.css"&lt;/span&gt; &lt;span class="nt"&gt;rel&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"stylesheet"&lt;/span&gt; &lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"text/css"&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;link&lt;/span&gt; &lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"/assets/css/nikola_ipython.css"&lt;/span&gt; &lt;span class="nt"&gt;rel&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"stylesheet"&lt;/span&gt; &lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"text/css"&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;link&lt;/span&gt; &lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"/assets/css/custom_ipython.css"&lt;/span&gt; &lt;span class="nt"&gt;rel&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"stylesheet"&lt;/span&gt; &lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"text/css"&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="nt"&gt;endif&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That's it! It's a little annoying that I need to do this by hand if I want to change to a new theme, but&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;numpy&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;
+
+&lt;div class="prompt output_prompt"&gt;Out[2]:&lt;/div&gt;
+
+
+
+
+&lt;div class="output_text output_subarea output_execute_result"&gt;
+&lt;pre&gt;3.141592653589793&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</description><guid>https://data.mikejarrett.ca/blog/setting-up-nikola/</guid><pubDate>Sat, 06 Jan 2018 05:50:46 GMT</pubDate></item></channel></rss>

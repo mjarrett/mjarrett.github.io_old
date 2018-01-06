@@ -6,39 +6,15 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>https://example.com/categories/blog.xml</loc>
-  <lastmod>2018-01-06T05:28:00Z</lastmod>
+  <loc>https://data.mikejarrett.ca/galleries/rss.xml</loc>
+  <lastmod>2018-01-06T18:35:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/categories/cat_nikola.xml</loc>
-  <lastmod>2018-01-06T05:28:00Z</lastmod>
+  <loc>https://data.mikejarrett.ca/rss.xml</loc>
+  <lastmod>2018-01-06T19:12:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/categories/demo.xml</loc>
-  <lastmod>2018-01-06T05:28:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://example.com/categories/nikola.xml</loc>
-  <lastmod>2018-01-06T05:28:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://example.com/categories/python.xml</loc>
-  <lastmod>2018-01-06T05:28:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://example.com/galleries/demo/rss.xml</loc>
-  <lastmod>2018-01-06T05:41:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://example.com/galleries/rss.xml</loc>
-  <lastmod>2018-01-06T05:41:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://example.com/rss.xml</loc>
-  <lastmod>2018-01-06T05:28:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://example.com/sitemap.xml</loc>
-  <lastmod>2018-01-06T05:41:00Z</lastmod>
+  <loc>https://data.mikejarrett.ca/sitemap.xml</loc>
+  <lastmod>2018-01-06T19:12:00Z</lastmod>
  </sitemap>
 </sitemapindex>
