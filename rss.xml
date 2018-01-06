@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mike Jarrett</title><link>https://data.mikejarrett.ca/</link><description>Mike Jarrett's data science blog</description><atom:link href="https://data.mikejarrett.ca/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:mike@mikejarrett.ca"&gt;Mike Jarrett&lt;/a&gt; </copyright><lastBuildDate>Sat, 06 Jan 2018 19:12:45 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setting Up Nikola</title><link>https://data.mikejarrett.ca/blog/setting-up-nikola/</link><dc:creator>Mike Jarrett</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mike Jarrett</title><link>https://data.mikejarrett.ca/</link><description>Mike Jarrett's data science blog</description><atom:link href="https://data.mikejarrett.ca/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:mike@mikejarrett.ca"&gt;Mike Jarrett&lt;/a&gt; </copyright><lastBuildDate>Sat, 06 Jan 2018 19:14:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setting Up Nikola</title><link>https://data.mikejarrett.ca/blog/setting-up-nikola/</link><dc:creator>Mike Jarrett</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
@@ -36,7 +36,7 @@ First, I picked a standard theme to use: &lt;code&gt;bootstrap3-gradients&lt;/co
         &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;link&lt;/span&gt; &lt;span class="nt"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"/assets/css/custom_ipython.css"&lt;/span&gt; &lt;span class="nt"&gt;rel&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"stylesheet"&lt;/span&gt; &lt;span class="nt"&gt;type&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"text/css"&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
 &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="nt"&gt;endif&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;That's it! It's a little annoying that I need to do this by hand if I want to change to a new theme, but&lt;/p&gt;
+&lt;p&gt;That's it! It's a little annoying that I need to do this by hand if I want to change to a new theme, but definitely manageable. Now when I add code cells to a blog, they look nice and clean.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
