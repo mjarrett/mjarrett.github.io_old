@@ -6,171 +6,95 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
-  <loc>https://data.mikejarrett.ca/</loc>
+  <loc>http://data.mikejarrett.ca/</loc>
   <lastmod>2018-01-07T17:55:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/2015/</loc>
+  <loc>http://data.mikejarrett.ca/2017/</loc>
   <lastmod>2018-01-06T20:29:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/2017/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/2018/</loc>
+  <loc>http://data.mikejarrett.ca/2018/</loc>
   <lastmod>2018-01-06T05:55:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/archive.html</loc>
-  <lastmod>2018-01-07T18:55:00Z</lastmod>
+  <loc>http://data.mikejarrett.ca/archive.html</loc>
+  <lastmod>2018-01-07T19:01:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/blog/</loc>
+  <loc>http://data.mikejarrett.ca/blog/</loc>
   <lastmod>2018-01-06T20:29:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/blog/setting-up-nikola/</loc>
+  <loc>http://data.mikejarrett.ca/blog/setting-up-nikola/</loc>
   <lastmod>2018-01-06T19:12:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/categories/</loc>
+  <loc>http://data.mikejarrett.ca/categories/</loc>
+  <lastmod>2018-01-07T18:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://data.mikejarrett.ca/categories/bikes/</loc>
   <lastmod>2018-01-06T20:29:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/categories/bike-touring/</loc>
+  <loc>http://data.mikejarrett.ca/categories/bikeshare/</loc>
   <lastmod>2018-01-06T20:29:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/categories/bike/</loc>
+  <loc>http://data.mikejarrett.ca/categories/datavis/</loc>
   <lastmod>2018-01-06T20:29:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/categories/bikes/</loc>
+  <loc>http://data.mikejarrett.ca/categories/matplotlib/</loc>
   <lastmod>2018-01-06T20:29:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/categories/bikeshare/</loc>
+  <loc>http://data.mikejarrett.ca/categories/mobi/</loc>
   <lastmod>2018-01-06T20:29:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/categories/datavis/</loc>
+  <loc>http://data.mikejarrett.ca/categories/python/</loc>
   <lastmod>2018-01-06T20:29:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/categories/golden-ears/</loc>
+  <loc>http://data.mikejarrett.ca/categories/science/</loc>
   <lastmod>2018-01-06T20:29:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/categories/matplotlib/</loc>
+  <loc>http://data.mikejarrett.ca/categories/vancouver/</loc>
   <lastmod>2018-01-06T20:29:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/categories/mobi/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/categories/python/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/categories/science/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/categories/shakedown/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/categories/trip-report/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/categories/trip-reports/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/categories/vancouver/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/galleries/</loc>
+  <loc>http://data.mikejarrett.ca/galleries/</loc>
   <lastmod>2018-01-06T05:55:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/listings/</loc>
+  <loc>http://data.mikejarrett.ca/listings/</loc>
   <lastmod>2018-01-06T05:55:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/posts/</loc>
+  <loc>http://data.mikejarrett.ca/posts/</loc>
   <lastmod>2018-01-07T18:55:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/posts/10/machine-learning-with-vancouver-bike-share-data/</loc>
+  <loc>http://data.mikejarrett.ca/posts/10/machine-learning-with-vancouver-bike-share-data/</loc>
   <lastmod>2018-01-07T17:48:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/posts/108/</loc>
-  <lastmod>2018-01-07T18:49:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/posts/11/mobi-station-activity/</loc>
+  <loc>http://data.mikejarrett.ca/posts/11/mobi-station-activity/</loc>
   <lastmod>2018-01-07T17:48:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/posts/11/what-really-affects-bikeshare-use-in-vancouver/</loc>
+  <loc>http://data.mikejarrett.ca/posts/11/what-really-affects-bikeshare-use-in-vancouver/</loc>
   <lastmod>2018-01-07T17:48:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/posts/111/</loc>
-  <lastmod>2018-01-07T18:49:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/posts/117/</loc>
-  <lastmod>2018-01-07T18:49:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/posts/140/</loc>
+  <loc>http://data.mikejarrett.ca/posts/140/</loc>
   <lastmod>2018-01-07T18:55:00Z</lastmod>
  </url>
  <url>
-  <loc>https://data.mikejarrett.ca/posts/2015/05/shakedown-i-bike-to-golden-ears/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/posts/2015/08/sunshine-coast-by-bike-may-long-2015/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/posts/2017/04/brazeau-lake-loop-august-2015/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/posts/2017/04/matplotlib-on-the-web/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/posts/2017/05/140/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/posts/2017/10/machine-learning-with-vancouver-bike-share-data/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/posts/2017/11/mobi-station-activity/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/posts/2017/11/what-really-affects-bikeshare-use-in-vancouver/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/posts/97/</loc>
-  <lastmod>2018-01-07T18:49:00Z</lastmod>
- </url>
- <url>
-  <loc>https://data.mikejarrett.ca/posts/matplotlib-on-the-web/</loc>
+  <loc>http://data.mikejarrett.ca/posts/matplotlib-on-the-web/</loc>
   <lastmod>2018-01-07T18:54:00Z</lastmod>
  </url>
 </urlset>

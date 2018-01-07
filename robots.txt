@@ -1,4 +1,4 @@
-Sitemap: https://data.mikejarrett.ca/sitemapindex.xml
+Sitemap: http://data.mikejarrett.ca/sitemapindex.xml
 
 User-Agent: *
 Host: data.mikejarrett.ca
