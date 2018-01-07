@@ -12,6 +12,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="https://data.mikejarrett.ca/blog/setting-up-nikola/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Jarrett">
+<link rel="prev" href="../../posts/11/what-really-affects-bikeshare-use-in-vancouver/" title="What really affects bikeshare use in Vancouver?" type="text/html">
 <meta property="og:site_name" content="Mike Jarrett">
 <meta property="og:title" content="Setting Up Nikola">
 <meta property="og:url" content="https://data.mikejarrett.ca/blog/setting-up-nikola/">
@@ -121,11 +122,11 @@ First, I picked a standard theme to use: <code>bootstrap3-gradients</code>.</p>
 <span class="p">}</span>
 </pre></div>
 <p>The bootstrap theme won't look for this file by default, so I need to modify the theme template file <code>./themes/bootstrap3-gradients/templates/base_helper.tmpl</code>. I look for the section with the default ipython CSS files, and add a line with my custom file:</p>
-<div class="highlight"><pre><span></span><span class="o">%</span> <span class="nt">if</span> <span class="nt">needs_ipython_css</span><span class="o">:</span>
-        <span class="o">&lt;</span><span class="nt">link</span> <span class="nt">href</span><span class="o">=</span><span class="s2">"/assets/css/ipython.min.css"</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span> <span class="nt">type</span><span class="o">=</span><span class="s2">"text/css"</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="nt">link</span> <span class="nt">href</span><span class="o">=</span><span class="s2">"/assets/css/nikola_ipython.css"</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span> <span class="nt">type</span><span class="o">=</span><span class="s2">"text/css"</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="nt">link</span> <span class="nt">href</span><span class="o">=</span><span class="s2">"/assets/css/custom_ipython.css"</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span> <span class="nt">type</span><span class="o">=</span><span class="s2">"text/css"</span><span class="o">&gt;</span>
-<span class="o">%</span> <span class="nt">endif</span>
+<div class="highlight"><pre><span></span>% if needs_ipython_css:
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"/assets/css/ipython.min.css"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/css"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"/assets/css/nikola_ipython.css"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/css"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"/assets/css/custom_ipython.css"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text/css"</span><span class="p">&gt;</span>
+% endif
 </pre></div>
 <p>That's it! It's a little annoying that I need to do this by hand if I want to change to a new theme, but definitely manageable. Now when I add code cells to a blog, they look nice and clean.</p>
 
@@ -195,7 +196,11 @@ First, I picked a standard theme to use: <code>bootstrap3-gradients</code>.</p>
   </div>
 
     </div>
-    <aside class="postpromonav"><nav></nav></aside><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-SDRP1VVYu+tgAGKhddBSl5+ezofHKZeI+OzxakbIe/Y=" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../../posts/11/what-really-affects-bikeshare-use-in-vancouver/" rel="prev" title="What really affects bikeshare use in Vancouver?">Previous post</a>
+            </li>
+        </ul></nav></aside><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-SDRP1VVYu+tgAGKhddBSl5+ezofHKZeI+OzxakbIe/Y=" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
         </script></article>
 </div>
