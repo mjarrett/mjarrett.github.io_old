@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://data.mikejarrett.ca/blog/rss.xml</loc>
-  <lastmod>2018-01-07T19:01:00Z</lastmod>
+  <lastmod>2018-01-08T03:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://data.mikejarrett.ca/categories/bikes.xml</loc>
@@ -16,6 +16,10 @@
  <sitemap>
   <loc>http://data.mikejarrett.ca/categories/bikeshare.xml</loc>
   <lastmod>2018-01-07T19:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://data.mikejarrett.ca/categories/data-vis.xml</loc>
+  <lastmod>2018-01-08T03:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://data.mikejarrett.ca/categories/datavis.xml</loc>
@@ -31,7 +35,7 @@
  </sitemap>
  <sitemap>
   <loc>http://data.mikejarrett.ca/categories/python.xml</loc>
-  <lastmod>2018-01-07T19:01:00Z</lastmod>
+  <lastmod>2018-01-08T03:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://data.mikejarrett.ca/categories/science.xml</loc>
@@ -39,7 +43,11 @@
  </sitemap>
  <sitemap>
   <loc>http://data.mikejarrett.ca/categories/vancouver.xml</loc>
-  <lastmod>2018-01-07T19:01:00Z</lastmod>
+  <lastmod>2018-01-08T03:53:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://data.mikejarrett.ca/categories/vanopendata.xml</loc>
+  <lastmod>2018-01-08T03:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://data.mikejarrett.ca/galleries/rss.xml</loc>
@@ -51,10 +59,10 @@
  </sitemap>
  <sitemap>
   <loc>http://data.mikejarrett.ca/rss.xml</loc>
-  <lastmod>2018-01-07T19:01:00Z</lastmod>
+  <lastmod>2018-01-08T03:53:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://data.mikejarrett.ca/sitemap.xml</loc>
-  <lastmod>2018-01-07T19:01:00Z</lastmod>
+  <lastmod>2018-01-08T03:53:00Z</lastmod>
  </sitemap>
 </sitemapindex>

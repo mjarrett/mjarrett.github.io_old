@@ -19,19 +19,27 @@
  </url>
  <url>
   <loc>http://data.mikejarrett.ca/archive.html</loc>
-  <lastmod>2018-01-07T19:01:00Z</lastmod>
+  <lastmod>2018-01-08T03:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://data.mikejarrett.ca/blog/</loc>
-  <lastmod>2018-01-06T20:29:00Z</lastmod>
+  <lastmod>2018-01-08T03:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://data.mikejarrett.ca/blog/mountain-view-open-data/</loc>
+  <lastmod>2018-01-08T03:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://data.mikejarrett.ca/blog/setting-up-nikola/</loc>
   <lastmod>2018-01-06T19:12:00Z</lastmod>
  </url>
  <url>
+  <loc>http://data.mikejarrett.ca/blog/test/</loc>
+  <lastmod>2018-01-07T21:59:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://data.mikejarrett.ca/categories/</loc>
-  <lastmod>2018-01-07T18:57:00Z</lastmod>
+  <lastmod>2018-01-08T03:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://data.mikejarrett.ca/categories/bikes/</loc>
@@ -40,6 +48,10 @@
  <url>
   <loc>http://data.mikejarrett.ca/categories/bikeshare/</loc>
   <lastmod>2018-01-06T20:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://data.mikejarrett.ca/categories/data-vis/</loc>
+  <lastmod>2018-01-08T03:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://data.mikejarrett.ca/categories/datavis/</loc>
@@ -64,6 +76,10 @@
  <url>
   <loc>http://data.mikejarrett.ca/categories/vancouver/</loc>
   <lastmod>2018-01-06T20:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://data.mikejarrett.ca/categories/vanopendata/</loc>
+  <lastmod>2018-01-08T03:53:00Z</lastmod>
  </url>
  <url>
   <loc>http://data.mikejarrett.ca/galleries/</loc>
