@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mike Jarrett (Posts about vancouver)</title><link>http://data.mikejarrett.ca/</link><description></description><atom:link href="http://data.mikejarrett.ca/categories/vancouver.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:mike@mikejarrett.ca"&gt;Mike Jarrett&lt;/a&gt; </copyright><lastBuildDate>Mon, 08 Jan 2018 03:53:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Mountain View Open Data</title><link>http://data.mikejarrett.ca/blog/mountain-view-open-data/</link><dc:creator>Mike Jarrett</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mike Jarrett (Posts about vancouver)</title><link>http://data.mikejarrett.ca/</link><description></description><atom:link href="http://data.mikejarrett.ca/categories/vancouver.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2018 &lt;a href="mailto:mike@mikejarrett.ca"&gt;Mike Jarrett&lt;/a&gt; </copyright><lastBuildDate>Mon, 08 Jan 2018 18:28:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Mountain View Open Data</title><link>http://data.mikejarrett.ca/blog/mountain-view-open-data/</link><dc:creator>Mike Jarrett</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
     &lt;div class="container" id="notebook-container"&gt;
 
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
@@ -11,64 +11,6 @@
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;IPython.display&lt;/span&gt; &lt;span class="k"&gt;import&lt;/span&gt; &lt;span class="n"&gt;HTML&lt;/span&gt;
-
-&lt;span class="n"&gt;HTML&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'''&amp;lt;script&amp;gt;&lt;/span&gt;
-&lt;span class="s1"&gt;code_show=true; &lt;/span&gt;
-&lt;span class="s1"&gt;function code_toggle() {&lt;/span&gt;
-&lt;span class="s1"&gt; if (code_show){&lt;/span&gt;
-&lt;span class="s1"&gt; $('div.input').hide();&lt;/span&gt;
-&lt;span class="s1"&gt; } else {&lt;/span&gt;
-&lt;span class="s1"&gt; $('div.input').show();&lt;/span&gt;
-&lt;span class="s1"&gt; }&lt;/span&gt;
-&lt;span class="s1"&gt; code_show = !code_show&lt;/span&gt;
-&lt;span class="s1"&gt;} &lt;/span&gt;
-&lt;span class="s1"&gt;$( document ).ready(code_toggle);&lt;/span&gt;
-&lt;span class="s1"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class="s1"&gt;&amp;lt;form action="javascript:code_toggle()"&amp;gt;&amp;lt;input type="submit" value="Click here to toggle on/off the raw code."&amp;gt;&amp;lt;/form&amp;gt;'''&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-
-
-&lt;div class="output_area"&gt;
-
-&lt;div class="prompt output_prompt"&gt;Out[1]:&lt;/div&gt;
-
-
-
-&lt;div class="output_html rendered_html output_subarea output_execute_result"&gt;
-&lt;script&gt;
-code_show=true; 
-function code_toggle() {
- if (code_show){
- $('div.input').hide();
- } else {
- $('div.input').show();
- }
- code_show = !code_show
-} 
-$( document ).ready(code_toggle);
-&lt;/script&gt;
-&lt;form action="javascript:code_toggle()"&gt;&lt;input type="submit" value="Click here to toggle on/off the raw code."&gt;&lt;/form&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
@@ -169,10 +111,10 @@ $( document ).ready(code_toggle);
 
 
 
-&lt;div id="0cad6357-9986-4855-a530-7b822ecde5ba"&gt;&lt;/div&gt;
+&lt;div id="e11d5d74-17b7-42f2-bb81-b33017c94870"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_javascript "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#0cad6357-9986-4855-a530-7b822ecde5ba');
+var element = $('#e11d5d74-17b7-42f2-bb81-b33017c94870');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -1066,10 +1008,10 @@ if (IPython.notebook.kernel != null) {
 
 
 
-&lt;div id="3c844dab-0707-476c-ae18-3fa1fc000885"&gt;&lt;/div&gt;
+&lt;div id="76e930b4-f512-4fe7-ac18-021fc48dbf23"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_javascript "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#3c844dab-0707-476c-ae18-3fa1fc000885');
+var element = $('#76e930b4-f512-4fe7-ac18-021fc48dbf23');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -1953,10 +1895,10 @@ if (IPython.notebook.kernel != null) {
 
 
 
-&lt;div id="2668da61-756f-4524-980a-c30426b95a13"&gt;&lt;/div&gt;
+&lt;div id="e2cb64f2-89b0-4c34-8bf5-e081facec5da"&gt;&lt;/div&gt;
 &lt;div class="output_subarea output_javascript "&gt;
 &lt;script type="text/javascript"&gt;
-var element = $('#2668da61-756f-4524-980a-c30426b95a13');
+var element = $('#e2cb64f2-89b0-4c34-8bf5-e081facec5da');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 

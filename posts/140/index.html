@@ -7,8 +7,9 @@
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
-<link href="../../assets/css/custom_ipython.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
+<link href="../../assets/css/bootyper.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://data.mikejarrett.ca/posts/140/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Jarrett">
@@ -87,7 +88,23 @@ On one case recently, I wanted to overlay a line plot on top of a bar ">
         </div>
         
 
-    </header><div class="e-content entry-content" itemprop="articleBody text">
+    </header><div>
+    <script>
+code_show=true; 
+function code_toggle() {
+ if (code_show){
+ $('div.input').hide();
+ } else {
+ $('div.input').show();
+ }
+ code_show = !code_show
+} 
+$( document ).ready(code_toggle);
+</script><form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form>
+    </div>
+    
+
+    <div class="e-content entry-content" itemprop="articleBody text">
     <div>
 <p></p>
 <p>Panda's Dataframe.plot() function is handy, but sometimes I run up against edge cases and spend too much time trying to fix them.</p>
