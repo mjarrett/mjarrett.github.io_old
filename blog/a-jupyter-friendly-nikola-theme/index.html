@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Jupyter-friendly Nikola theme | Mike Jarrett</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/bootyper.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://data.mikejarrett.ca/blog/a-jupyter-friendly-nikola-theme/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<meta name="author" content="Mike Jarrett">
+<link rel="prev" href="../mountain-view-cemetary-data/" title="Mountain View Cemetary Data" type="text/html">
+<meta property="og:site_name" content="Mike Jarrett">
+<meta property="og:title" content="A Jupyter-friendly Nikola theme">
+<meta property="og:url" content="http://data.mikejarrett.ca/blog/a-jupyter-friendly-nikola-theme/">
+<meta property="og:description" content="I was very happy to discover the Nikola website framework recently, thanks to it's easy setup and natural integration with Jupyter notebooks. I was surprised, though, that while Jupyter integration is">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-01-15T18:52:41-08:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://data.mikejarrett.ca/">
+
+                <span id="blog-title">Mike Jarrett</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../archive.html">Archive</a>
+                </li>
+<li>
+<a href="../../categories/">Tags</a>
+                </li>
+<li>
+<a href="../../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="index.ipynb" id="sourcelink">Source</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">A Jupyter-friendly Nikola theme</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    Mike Jarrett
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2018-01-15T18:52:41-08:00" itemprop="datePublished" title="2018-01-15 18:52">2018-01-15 18:52</time></a></p>
+                <p class="commentline">
+        
+    <a href="#disqus_thread" data-disqus-identifier="cache/posts/a-jupyter-friendly-nikola-theme.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="index.ipynb" class="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div>
+    <script>
+code_show=true; 
+function code_toggle() {
+ if (code_show){
+ $('div.input').hide();
+ } else {
+ $('div.input').show();
+ }
+ code_show = !code_show
+} 
+$( document ).ready(code_toggle);
+</script><form action="javascript:code_toggle()"><input type="submit" class="btn btn-primary" value="Click here to toggle on/off the raw code."></form>
+    </div>
+    
+
+    <div class="e-content entry-content" itemprop="articleBody text">
+    <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I was very happy to discover the Nikola website framework recently, thanks to it's easy setup and natural integration with Jupyter notebooks. I was surprised, though, that while Jupyter integration is super easy, notebooks don't look great with a lot of themes. I decided I might as well learn how to do some custom themeing, and the result is <a href="https://github.com/mjarrett/bootyper">bootyper</a>, and extension of the basic Bootstrap3 theme with some small improvements in Jupyter compatibility.</p>
+<p>Here's an example of the effect I don't like. Notice the grey boxes around the input/output prompts. 
+<img src="jupyter-example1.png" alt=""><em>From <a href="http://www.grahamwheeler.com/posts/using-jupyter-as-a-music-notebook.html">http://www.grahamwheeler.com/posts/using-jupyter-as-a-music-notebook.html</a></em></p>
+<h3 id="Fixing-the-prompt-style">Fixing the prompt style<a class="anchor-link" href="#Fixing-the-prompt-style">¶</a>
+</h3>
+<p>So my first move is to remove those boxes by adding a new CSS stylesheet.</p>
+
+<pre><code>/* Override nikola_ipython.css */
+div.prompt {
+  background-color: #FFFFFF;
+}
+
+div.input {
+  border: none;
+}</code></pre>
+<p>And add that stylesheet to base header in <code>base_helper.tmpl</code>:</p>
+
+<pre><code>    % if needs_ipython_css:
+        &lt;link href="/assets/css/ipython.min.css" rel="stylesheet" type="text/css"&gt;
+        &lt;link href="/assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"&gt;
+        &lt;link href="/assets/css/bootyper.css" rel="stylesheet" type="text/css"&gt;
+    % endif</code></pre>
+<h3 id="Add-a-button-to-hide/reveal-code-cells">Add a button to hide/reveal code cells<a class="anchor-link" href="#Add-a-button-to-hide/reveal-code-cells">¶</a>
+</h3>
+<p>I plan to use my blog for a combination of technical posts where content is mostly in the code cells, and more general interest posts where the code is a means to an end. For readers who don't care about looking at the raw code, I want a button that can hide the code cells and just leave Markdown cells and output fields.</p>
+<p>To do this, I make a copy of the <code>post.tmpl</code> template file and name it <code>post_ipynb.tmpl</code>. This template will be used when generating a post from a Jupyter notebook. To make Nikola aware of these, I edit the <code>conf.py</code> file such that the entry for .ipynb files reads:</p>
+
+<pre><code>POSTS = (
+    ("posts/*.ipynb", "blog", "post_ipynb.tmpl"),
+    ...
+)</code></pre>
+<p>Finally, I edit the new template file to add a button that calls some javascript to toggle the input code cells</p>
+
+<pre><code>&lt;div&gt;
+&lt;script&gt;
+code_show=true;
+function code_toggle() {
+ if (code_show){
+ $('div.input').hide();
+ } else {
+ $('div.input').show();
+ }
+ code_show = !code_show
+}
+$( document ).ready(code_toggle);
+&lt;/script&gt;
+&lt;form action="javascript:code_toggle()"&gt;&lt;input type="submit" class="btn btn-primary" value="Click here to toggle on/off the raw code."&gt;&lt;/form&gt;
+    &lt;/div&gt;</code></pre>
+<p>And that's it! Easier on the eyes and a bit of added functionality. Try it yourself with the code cells below!
+<img src="code_on.png" alt=""><img src="code_off.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>a <span class="o">=</span> <span class="m">1</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>a
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+1
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    </div>
+  </div>
+
+    </div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../mountain-view-cemetary-data/" rel="prev" title="Mountain View Cemetary Data">Previous post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="mikejarrett",
+            disqus_url="http://data.mikejarrett.ca/blog/a-jupyter-friendly-nikola-theme/",
+        disqus_title="A Jupyter-friendly Nikola theme",
+        disqus_identifier="cache/posts/a-jupyter-friendly-nikola-theme.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-SDRP1VVYu+tgAGKhddBSl5+ezofHKZeI+OzxakbIe/Y=" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
+        </script></article><script>var disqus_shortname="mikejarrett";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="text-center">
+<p>
+<span class="fa-stack fa-2x">
+  <a href="../../rss.xml">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-rss fa-inverse fa-stack-1x"></i>
+  </a>
+</span>
+<span class="fa-stack fa-2x">
+  <a href="https://twitter.com/mikejarrett_">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-twitter fa-inverse fa-stack-1x"></i>
+  </a>
+</span>
+<span class="fa-stack fa-2x">
+  <a href="https://github.com/mjarrett">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-github fa-inverse fa-stack-1x"></i>
+  </a>
+</span>
+<span class="fa-stack fa-2x">
+  <a href="mailto:mike@mikejarrett.ca">
+    <i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fa fa-envelope fa-inverse fa-stack-1x"></i>
+  </a>
+</span>
+</p>
+<p>
+  Contents © 2018  <a href="mailto:mike@mikejarrett.ca">Mike Jarrett</a>
+  —
+  
+  —
+  Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+</p>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

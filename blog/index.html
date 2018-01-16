@@ -68,7 +68,132 @@
             </p>
 
     </header><div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="mountain-view-cemetary-data/" class="u-url">Mountain View Cemetary Data</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="a-jupyter-friendly-nikola-theme/" class="u-url">A Jupyter-friendly Nikola theme</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Jarrett
+            </span></p>
+            <p class="dateline"><a href="a-jupyter-friendly-nikola-theme/" rel="bookmark"><time class="published dt-published" datetime="2018-01-15T18:52:41-08:00" title="2018-01-15 18:52">2018-01-15 18:52</time></a></p>
+                <p class="commentline">
+        
+    <a href="a-jupyter-friendly-nikola-theme/#disqus_thread" data-disqus-identifier="cache/posts/a-jupyter-friendly-nikola-theme.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="p-summary entry-summary">
+    <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I was very happy to discover the Nikola website framework recently, thanks to it's easy setup and natural integration with Jupyter notebooks. I was surprised, though, that while Jupyter integration is super easy, notebooks don't look great with a lot of themes. I decided I might as well learn how to do some custom themeing, and the result is <a href="https://github.com/mjarrett/bootyper">bootyper</a>, and extension of the basic Bootstrap3 theme with some small improvements in Jupyter compatibility.</p>
+<p>Here's an example of the effect I don't like. Notice the grey boxes around the input/output prompts. 
+<img src="a-jupyter-friendly-nikola-theme/jupyter-example1.png" alt=""><em>From <a href="http://www.grahamwheeler.com/posts/using-jupyter-as-a-music-notebook.html">http://www.grahamwheeler.com/posts/using-jupyter-as-a-music-notebook.html</a></em></p>
+<h3 id="Fixing-the-prompt-style">Fixing the prompt style<a class="anchor-link" href="a-jupyter-friendly-nikola-theme/#Fixing-the-prompt-style">¶</a>
+</h3>
+<p>So my first move is to remove those boxes by adding a new CSS stylesheet.</p>
+
+<pre><code>/* Override nikola_ipython.css */
+div.prompt {
+  background-color: #FFFFFF;
+}
+
+div.input {
+  border: none;
+}</code></pre>
+<p>And add that stylesheet to base header in <code>base_helper.tmpl</code>:</p>
+
+<pre><code>    % if needs_ipython_css:
+        &lt;link href="/assets/css/ipython.min.css" rel="stylesheet" type="text/css"&gt;
+        &lt;link href="/assets/css/nikola_ipython.css" rel="stylesheet" type="text/css"&gt;
+        &lt;link href="/assets/css/bootyper.css" rel="stylesheet" type="text/css"&gt;
+    % endif</code></pre>
+<h3 id="Add-a-button-to-hide/reveal-code-cells">Add a button to hide/reveal code cells<a class="anchor-link" href="a-jupyter-friendly-nikola-theme/#Add-a-button-to-hide/reveal-code-cells">¶</a>
+</h3>
+<p>I plan to use my blog for a combination of technical posts where content is mostly in the code cells, and more general interest posts where the code is a means to an end. For readers who don't care about looking at the raw code, I want a button that can hide the code cells and just leave Markdown cells and output fields.</p>
+<p>To do this, I make a copy of the <code>post.tmpl</code> template file and name it <code>post_ipynb.tmpl</code>. This template will be used when generating a post from a Jupyter notebook. To make Nikola aware of these, I edit the <code>conf.py</code> file such that the entry for .ipynb files reads:</p>
+
+<pre><code>POSTS = (
+    ("posts/*.ipynb", "blog", "post_ipynb.tmpl"),
+    ...
+)</code></pre>
+<p>Finally, I edit the new template file to add a button that calls some javascript to toggle the input code cells</p>
+
+<pre><code>&lt;div&gt;
+&lt;script&gt;
+code_show=true;
+function code_toggle() {
+ if (code_show){
+ $('div.input').hide();
+ } else {
+ $('div.input').show();
+ }
+ code_show = !code_show
+}
+$( document ).ready(code_toggle);
+&lt;/script&gt;
+&lt;form action="javascript:code_toggle()"&gt;&lt;input type="submit" class="btn btn-primary" value="Click here to toggle on/off the raw code."&gt;&lt;/form&gt;
+    &lt;/div&gt;</code></pre>
+<p>And that's it! Easier on the eyes and a bit of added functionality. Try it yourself with the code cells below!
+<img src="a-jupyter-friendly-nikola-theme/code_on.png" alt=""><img src="a-jupyter-friendly-nikola-theme/code_off.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>a <span class="o">=</span> <span class="m">1</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-r"><pre><span></span>a
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+1
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    </div>
+  </div>
+
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="mountain-view-cemetary-data/" class="u-url">Mountain View Cemetary Data</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Jarrett
