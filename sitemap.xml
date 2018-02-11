@@ -7,7 +7,31 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://notes.mikejarrett.ca/</loc>
-  <lastmod>2018-02-11T02:09:00Z</lastmod>
+  <lastmod>2018-02-11T18:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://notes.mikejarrett.ca/10/</loc>
+  <lastmod>2018-02-11T18:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://notes.mikejarrett.ca/10/machine-learning-with-vancouver-bike-share-data/</loc>
+  <lastmod>2018-02-11T18:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://notes.mikejarrett.ca/11/</loc>
+  <lastmod>2018-02-11T18:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://notes.mikejarrett.ca/11/mobi-station-activity/</loc>
+  <lastmod>2018-02-11T18:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://notes.mikejarrett.ca/11/what-really-affects-bikeshare-use-in-vancouver/</loc>
+  <lastmod>2018-02-11T18:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://notes.mikejarrett.ca/140/</loc>
+  <lastmod>2018-02-11T18:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://notes.mikejarrett.ca/2017/</loc>
@@ -16,6 +40,10 @@
  <url>
   <loc>http://notes.mikejarrett.ca/2018/</loc>
   <lastmod>2018-01-06T05:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://notes.mikejarrett.ca/a-jupyter-friendly-nikola-theme/</loc>
+  <lastmod>2018-02-11T18:37:00Z</lastmod>
  </url>
  <url>
   <loc>http://notes.mikejarrett.ca/archive.html</loc>
@@ -86,6 +114,18 @@
   <lastmod>2018-01-06T05:55:00Z</lastmod>
  </url>
  <url>
+  <loc>http://notes.mikejarrett.ca/mapping-googles-location-history-with-python/</loc>
+  <lastmod>2018-02-11T18:37:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://notes.mikejarrett.ca/matplotlib-on-the-web/</loc>
+  <lastmod>2018-02-11T18:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://notes.mikejarrett.ca/mountain-view-cemetary-data/</loc>
+  <lastmod>2018-02-11T18:37:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://notes.mikejarrett.ca/posts/</loc>
   <lastmod>2018-01-07T18:55:00Z</lastmod>
  </url>
@@ -108,5 +148,9 @@
  <url>
   <loc>http://notes.mikejarrett.ca/posts/matplotlib-on-the-web/</loc>
   <lastmod>2018-01-07T18:54:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://notes.mikejarrett.ca/setting-up-nikola/</loc>
+  <lastmod>2018-02-11T18:37:00Z</lastmod>
  </url>
 </urlset>

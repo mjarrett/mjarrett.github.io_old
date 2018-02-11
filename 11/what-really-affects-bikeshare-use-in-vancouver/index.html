@@ -4,21 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>What really affects bikeshare use in Vancouver? | Mike Jarrett</title>
-<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<link href="../../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
-<link href="../../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
-<link href="../../../assets/css/bootyper.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/bootyper.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
-<link rel="canonical" href="http://notes.mikejarrett.ca/posts/11/what-really-affects-bikeshare-use-in-vancouver/">
-<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://notes.mikejarrett.ca/11/what-really-affects-bikeshare-use-in-vancouver/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 <meta name="author" content="Mike Jarrett">
 <link rel="prev" href="../mobi-station-activity/" title="Mobi station activity" type="text/html">
-<link rel="next" href="../../../blog/setting-up-nikola/" title="Setting Up Nikola" type="text/html">
+<link rel="next" href="../../setting-up-nikola/" title="Setting Up Nikola" type="text/html">
 <meta property="og:site_name" content="Mike Jarrett">
 <meta property="og:title" content="What really affects bikeshare use in Vancouver?">
-<meta property="og:url" content="http://notes.mikejarrett.ca/posts/11/what-really-affects-bikeshare-use-in-vancouver/">
+<meta property="og:url" content="http://notes.mikejarrett.ca/11/what-really-affects-bikeshare-use-in-vancouver/">
 <meta property="og:description" content="City staff recently reported to Council about the status of the Mobi bikeshare system. You can see the slideshow for yourself here. Results generally look positive for the future of bikeshare in Vanco">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-11-21T23:32:26-08:00">
@@ -52,13 +52,13 @@
         <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
             <ul class="nav navbar-nav">
 <li>
-<a href="../../../archive.html">Archive</a>
+<a href="../../archive.html">Archive</a>
                 </li>
 <li>
-<a href="../../../categories/">Tags</a>
+<a href="../../categories/">Tags</a>
                 </li>
 <li>
-<a href="../../../rss.xml">RSS feed</a>
+<a href="../../rss.xml">RSS feed</a>
 
                 
             </li>
@@ -108,17 +108,17 @@
 
 <p>I've described at bit more about how I collected the Mobi trip data in a <a href="http://mikejarrett.ca/blog/2017/10/machine-learning-with-vancouver-bike-share-data/">previous post</a>. While the data is unofficial and has some clear sources of error, it should be reliable to look at usage trends. For weather data, I wrote a small scraper to grab historical Vancouver weather from weather.gc.ca. All the code I used for this post is available on <a href="https://github.com/mjarrett/mobi">my github page</a>.</p>
 <p>First, let's take a zoomed out look at bike usage from late April to early November 2017. Rainfall and daily highs are plotted on the same scale, in degrees Celcius and millimeters of rain. Weekends are highlighted by grey bars. The first thing we see is the obvious broad trend across the seasons, matching up with the temperature trend. This is probably what city staff noticed. Next, we see that on days with sharp drop-offs from the broader trend, there's almost always some rainfall. So far so good!</p>
-<p><img class="alignnone size-full wp-image-255" src="../../../images/weather_plot_2017-04-20-2017-11-03.png" alt="" width="640" height="480"></p>
+<p><img class="alignnone size-full wp-image-255" src="../../images/weather_plot_2017-04-20-2017-11-03.png" alt="" width="640" height="480"></p>
 <p>(Days with missing data are days I had computer downtime before I moved my scraper to a cloud server.)</p>
 <p>A few things to note. Weather data is per day, and for just one Vancouver weather station. There are certainly days where it pours overnight and the day is clear, or it rains more in one part of the city than another. That said, let's take a closer look at a few weeks.</p>
-<p><img class="alignnone size-full wp-image-253" src="../../../images/weather_plot_2017-06-02-2017-06-21.png" alt="" width="640" height="480"></p>
+<p><img class="alignnone size-full wp-image-253" src="../../images/weather_plot_2017-06-02-2017-06-21.png" alt="" width="640" height="480"></p>
 <p>Here's two consecutive weekends where there was substantial rain on Sunday but none on Saturday. The drop-off is clear on both weekends. But later in the second week, there is a day with much less rainfall that has almost the same drop-off in number of trips.</p>
-<p><img class="alignnone size-full wp-image-254" src="../../../images/weather_plot_2017-09-01-2017-09-21.png" alt="" width="640" height="480"></p>
+<p><img class="alignnone size-full wp-image-254" src="../../images/weather_plot_2017-09-01-2017-09-21.png" alt="" width="640" height="480"></p>
 <p>Here's another three week stretch. Again, days with rain clearly show reduced Mobi usage. But usage also follows the temperature line! How much of the variation in bike usage is due to temperature, and how much is due to rain?</p>
 <p>First let's look at temperature and rainfall separately.</p>
-<p><img class="alignnone size-full wp-image-269" src="../../../images/trips_vs_temp-1.png" alt="" width="640" height="480"></p>
+<p><img class="alignnone size-full wp-image-269" src="../../images/trips_vs_temp-1.png" alt="" width="640" height="480"></p>
 <p>The relationship between temperature and bike share trips is strong and exactly what you'd expect. More people ride on warm days! I've coloured the data by rainfall to see if there's any interesting outliers, but the rainy days are all well within the trend. We had pretty great weather all summer this year, so no examples of really rainy days with warm temperatures.</p>
-<p><img class="alignnone size-full wp-image-235" style="font-size: 1rem;" src="../../../images/trips_vs_rainfall.png" alt="" width="640" height="480"></p>
+<p><img class="alignnone size-full wp-image-235" style="font-size: 1rem;" src="../../images/trips_vs_rainfall.png" alt="" width="640" height="480"></p>
 <p>Rainfall also shows a clear relationship with daily trips. But it's not linear like temperature. There's a band of zero rain days that correlate with temperature, then a linear segment as ridership falls off with increased rainfall, then ridership hits a baseline below which it doesn't decrease. Apparently regardless of the amount of rain there's something like 600-800 users who will take out a bike no matter what. Cool!</p>
 <p>So, we need to make a model that incorporates both temperature and rainfall to try to separate their effects. But to be as accurate as possible, we should include any other prominent factors. I showed in a earlier post that over the course of a day, weekdays and weekends show different ridership patters. But it turns out there's no obvious difference in the total number of trips.</p>
 <p><img class="alignnone size-full wp-image-241" style="font-size: 1rem;" src="http://mikejarrett.ca/images/weekdays_vs_weekends_boxplot-1.png" alt="" width="640" height="480"></p>
@@ -167,7 +167,7 @@ We can take a few things away from this table. The adjusted R<sup>2 </sup>value
 </ul>
 The coefficients associated with the days of the week can be interpreted as the intercept for each day of the week, in other words the number of trips expected on that day if all other factors are zero. This is obviously nonsense, since we can't have fewer than zero trips. But the daily high temperature for the dates I have data for are all well above zero, so the model doesn't have any data for temperatures near zero. More on this later.
 <p>Given our model, we can plot the expected number of trips for each day on top of the measured number of trip.</p>
-<p><img class="alignnone size-full wp-image-248" src="../../../images/trip_vs_predicted_full_model.png" alt="" width="640" height="480"></p>
+<p><img class="alignnone size-full wp-image-248" src="../../images/trip_vs_predicted_full_model.png" alt="" width="640" height="480"></p>
 <p>The model nails the macroscopic structure, driven by temperature and daylight, and does pretty well with the day-to-day variations which are probably more driven by rainfall and the day of the week.</p>
 <p>There's a few big misses, though. Let's look at the days where our model misses the mark by over 1000 trips:</p>
 <p>On July 11th, a Tuesday, our model expects a normal summer day but the counted number of trips drops of precipitously. The weather data for that says 20 degrees and no rain, so I'm not sure what's going on. I've looked at my source data and don't see anything out of the ordinary, but I suspect there was a data acquisition issue that day.</p>
@@ -179,19 +179,19 @@ The coefficients associated with the days of the week can be interpreted as the 
 </div>
     </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../../categories/bikes/" rel="tag">bikes</a></li>
-            <li><a class="tag p-category" href="../../../categories/bikeshare/" rel="tag">bikeshare</a></li>
-            <li><a class="tag p-category" href="../../../categories/datavis/" rel="tag">datavis</a></li>
-            <li><a class="tag p-category" href="../../../categories/mobi/" rel="tag">mobi</a></li>
-            <li><a class="tag p-category" href="../../../categories/python/" rel="tag">python</a></li>
-            <li><a class="tag p-category" href="../../../categories/science/" rel="tag">Science</a></li>
+<li><a class="tag p-category" href="../../categories/bikes/" rel="tag">bikes</a></li>
+            <li><a class="tag p-category" href="../../categories/bikeshare/" rel="tag">bikeshare</a></li>
+            <li><a class="tag p-category" href="../../categories/datavis/" rel="tag">datavis</a></li>
+            <li><a class="tag p-category" href="../../categories/mobi/" rel="tag">mobi</a></li>
+            <li><a class="tag p-category" href="../../categories/python/" rel="tag">python</a></li>
+            <li><a class="tag p-category" href="../../categories/science/" rel="tag">Science</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
                 <a href="../mobi-station-activity/" rel="prev" title="Mobi station activity">Previous post</a>
             </li>
             <li class="next">
-                <a href="../../../blog/setting-up-nikola/" rel="next" title="Setting Up Nikola">Next post</a>
+                <a href="../../setting-up-nikola/" rel="next" title="Setting Up Nikola">Next post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
         
@@ -199,7 +199,7 @@ The coefficients associated with the days of the week can be interpreted as the 
         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="mikejarrett",
-            disqus_url="http://notes.mikejarrett.ca/posts/11/what-really-affects-bikeshare-use-in-vancouver/",
+            disqus_url="http://notes.mikejarrett.ca/11/what-really-affects-bikeshare-use-in-vancouver/",
         disqus_title="What really affects bikeshare use in Vancouver?",
         disqus_identifier="cache/posts/11/what-really-affects-bikeshare-use-in-vancouver.html",
         disqus_config = function () {
@@ -222,7 +222,7 @@ The coefficients associated with the days of the week can be interpreted as the 
         <footer id="footer"><div class="text-center">
 <p>
 <span class="fa-stack fa-2x">
-  <a href="../../../rss.xml">
+  <a href="../../rss.xml">
     <i class="fa fa-circle fa-stack-2x"></i>
     <i class="fa fa-rss fa-inverse fa-stack-1x"></i>
   </a>
@@ -261,7 +261,7 @@ The coefficients associated with the days of the week can be interpreted as the 
 </div>
 
 
-            <script src="../../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+            <script src="../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("en");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates -->
