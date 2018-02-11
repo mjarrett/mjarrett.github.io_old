@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://notes.mikejarrett.ca/blog/rss.xml</loc>
-  <lastmod>2018-02-11T02:01:00Z</lastmod>
+  <lastmod>2018-02-11T07:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://notes.mikejarrett.ca/categories/bikes.xml</loc>
@@ -51,10 +51,10 @@
  </sitemap>
  <sitemap>
   <loc>http://notes.mikejarrett.ca/rss.xml</loc>
-  <lastmod>2018-02-11T02:01:00Z</lastmod>
+  <lastmod>2018-02-11T07:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://notes.mikejarrett.ca/sitemap.xml</loc>
-  <lastmod>2018-02-11T02:01:00Z</lastmod>
+  <lastmod>2018-02-11T07:05:00Z</lastmod>
  </sitemap>
 </sitemapindex>
