@@ -14,10 +14,6 @@
   <lastmod>2018-02-11T18:39:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://notes.mikejarrett.ca/blog/rss.xml</loc>
-  <lastmod>2018-02-11T07:11:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://notes.mikejarrett.ca/categories/bikes.xml</loc>
   <lastmod>2018-02-11T01:44:00Z</lastmod>
  </sitemap>
@@ -54,15 +50,11 @@
   <lastmod>2018-02-11T01:44:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://notes.mikejarrett.ca/posts/rss.xml</loc>
-  <lastmod>2018-02-11T01:44:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://notes.mikejarrett.ca/rss.xml</loc>
-  <lastmod>2018-02-11T07:11:00Z</lastmod>
+  <lastmod>2018-03-09T05:16:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://notes.mikejarrett.ca/sitemap.xml</loc>
-  <lastmod>2018-02-11T18:39:00Z</lastmod>
+  <lastmod>2018-03-09T05:16:00Z</lastmod>
  </sitemap>
 </sitemapindex>

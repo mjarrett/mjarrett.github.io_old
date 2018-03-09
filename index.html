@@ -14,7 +14,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://notes.mikejarrett.ca/">
 <!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-<link rel="prefetch" href="mapping-googles-location-history-with-python/" type="text/html">
+<link rel="prefetch" href="storing-metadata-in-pandas-dataframes/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -67,7 +67,38 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="mapping-googles-location-history-with-python/" class="u-url">Mapping Google's Location History with Python</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="storing-metadata-in-pandas-dataframes/" class="u-url">Storing metadata in Pandas DataFrames</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Jarrett
+            </span></p>
+            <p class="dateline"><a href="storing-metadata-in-pandas-dataframes/" rel="bookmark"><time class="published dt-published" datetime="2018-03-08T21:15:44-08:00" title="2018-03-08 21:15">2018-03-08 21:15</time></a></p>
+                <p class="commentline">
+        
+    <a href="storing-metadata-in-pandas-dataframes/#disqus_thread" data-disqus-identifier="cache/posts/storing-metadata-in-pandas-dataframes.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="p-summary entry-summary">
+    <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I came across a problem recently where I wanted to store metadata about each column in a pandas DataFrame. This could be done easily enough with a simple dictionary where each column name is a key, but I was hoping for something that would propogate with a DataFrame as it's sliced, copied, expanded, etc, without having to explicitely keep track of the metadata in my scripts.</p>
+<p>My solution is to use the pandas MultiIndex. In this post I'll discuss the pros and cons of this approach, show some examples, a show how I've subclassed the pandas DataFrame to make this approach easier.</p>
+<p class="more"><a href="storing-metadata-in-pandas-dataframes/">Read more…</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="mapping-googles-location-history-with-python/" class="u-url">Mapping Google's Location History with Python</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Jarrett
